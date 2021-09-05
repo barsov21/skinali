@@ -1,0 +1,16 @@
+.button {
+    border: none;
+    text-transform: uppercase;
+    padding: 25px 45px;
+    @include bold;
+    background-color: $primary;
+    color: #fff;
+    cursor: pointer;
+    &_o {
+        border: 2px solid $primary;
+        color: $primary;
+        background-color: #fff;
+        padding: 17px 22px;
+        font-size: 12px;
+    }
+}

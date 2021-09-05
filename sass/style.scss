@@ -1,3 +1,23 @@
+// Базовый шрифт сайта
+@import 'libs/font';
+// Подключение файла normalize.scss
+@import 'libs/normalize';
+
+// Базовые настройки сетки
+@import 'base/grid';
+// Mixins
+@import 'base/mixins';
+// Переменные 
+@import 'base/variables';
+
 * {
-    box-sizing: border-box;
+    @include light;
+    color: $text-color;
 }
+
+// Главный экран сайта 
+@import 'blocks/header';
+// Кнопки на сайте
+@import 'blocks/buttons';
+
+
