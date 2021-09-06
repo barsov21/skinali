@@ -1,0 +1,6 @@
+.title {
+    font-size: 30px;
+    @include bold;
+    text-align: center;
+    text-transform: uppercase;
+}
