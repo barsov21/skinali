@@ -1,0 +1,20 @@
+.offer {
+    padding: 129px 0;
+    background-color: $bg-secondary;
+    &__block {
+        background: #fff url('../img/offer/form-bg-calc.png') center (right / contain) no-repeat;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        padding: 80px;
+        margin-top: -330px;
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: 25px;
+        text-transform: uppercase;
+        @include bold;
+    }
+    &__subtitle {
+        margin-bottom: 48px;
+        font-size: 21px;
+    }
+}
