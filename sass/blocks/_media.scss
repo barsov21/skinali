@@ -22,6 +22,11 @@
             background-position: top right;
         }
     }
+    .features {
+        &__item {
+            flex-basis: 50%;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -56,7 +61,19 @@
         &__input {
             margin-bottom: 20px;
         }
-    }      
+    }
+    .features {
+        &__item {
+            flex-basis: 100%;
+            margin-bottom: 50px;
+            &:nth-child(4) {
+                margin-bottom: 50px;
+            }
+            &:nth-child(5) {
+                margin-bottom: 50px;
+            }
+        }
+    }     
 }
 
 @media (max-width: 575px) {
@@ -75,5 +92,13 @@
     }
     .button_o {
         padding: 17px 5px;
+    }
+    .features {
+        padding: 60px 0;
+    }
+    .title {
+        &_features {
+            font-size: 24px;
+        }
     }
 }
