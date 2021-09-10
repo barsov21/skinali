@@ -6,6 +6,7 @@
     background-color: $primary;
     color: #fff;
     cursor: pointer;
+    text-decoration: none;
     &_o {
         border: 2px solid $primary;
         color: $primary;
@@ -16,5 +17,18 @@
     &_form {
         height: 80px;
         width: 100%;
+    }
+    &_fitting {
+        border: none;
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+    &_add {
+        padding: 6px 10px;
+        font-size: 11px;
+        background-color: lighten($primary, 10%);
+    }
+    &_like {
+        padding: 4px;
     }
 }

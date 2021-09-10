@@ -7,6 +7,16 @@
             background-position: center right -120px;
         }
     }
+    .catalog {
+        padding: 80px 0;
+        &__wrapper {
+            justify-content: center;
+            margin-top: 80px;
+        }
+        &__card {
+            max-width: 470px;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -25,6 +35,18 @@
     .features {
         &__item {
             flex-basis: 50%;
+        }
+    }
+    .catalog {
+        padding: 70px 0;
+
+        &__wrapper {
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        &__title {
+            font-size: 28px;
         }
     }
 }
@@ -73,7 +95,19 @@
                 margin-bottom: 50px;
             }
         }
-    }     
+    }
+    .catalog {
+        padding: 60px 0;
+
+        &__wrapper {
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+    }
 }
 
 @media (max-width: 575px) {

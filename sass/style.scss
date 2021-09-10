@@ -14,6 +14,9 @@
     @include light;
     color: $text-color;
 }
+img {
+    max-width: 100%;
+}
 
 // Главный экран сайта 
 @import 'blocks/header';
@@ -27,6 +30,8 @@
 @import 'blocks/forms';
 // Секция features
 @import 'blocks/features';
+// Файл catalog.scss 
+@import 'blocks/catalog';
 // Файл media.scss
 @import 'blocks/media';
 
