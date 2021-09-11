@@ -1,0 +1,37 @@
+.blog-list {
+    padding: 100px 0;
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+    &__title {
+        font-size: 24px;
+        @include bold;
+    }
+    &__link-more {
+        color: $primary;
+        font-size: 16px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__card {
+        margin-bottom: 40px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    }
+    &__image {
+        height: 200px;
+        overflow: hidden;
+    }
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 80px;
+    }
+}
