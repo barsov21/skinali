@@ -34,6 +34,12 @@
             margin-top: 80px;
         }
     }
+    .step {
+        padding: 80px 0;
+        &__wrapper {
+            margin-top: 80px;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -73,12 +79,30 @@
     }
     .price {
         padding: 70px 0;
+        &__title {
+            font-size: 28px;
+        }
         &__wrapper {
             justify-content: center;
             margin-top: 70px;
         }
         &__card {
             margin: 20px;
+        }
+    }
+    .step {
+        padding: 70px 0;
+        &__wrapper {
+            margin-top: 70px;
+        }
+        &__item {
+            width: 33%;
+            &::before {
+                display: none;
+            }
+        }
+        &__title {
+            font-size: 28px;
         }
     }
 }
@@ -166,6 +190,18 @@
         }
         &__title {
             font-size: 24px;
+        }
+    }
+    .step {
+        padding: 60px 0;
+        &__wrapper {
+            margin-top: 60px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &__item {
+            width: 100%;
         }
     }
 }

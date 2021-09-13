@@ -1,0 +1,39 @@
+.step {
+    padding: 100px 0;
+    background-color: #f1f1f1;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+    &__item {
+        position: relative;
+        text-align: center;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 33%;
+            right: -67%;
+            width: 108%;
+            height: 2px;
+            background-color: rgba(#7e7b78, .9);
+            display: block;
+        }
+        &:last-child {
+            &::before {
+                display: none;
+            }
+        }
+        &-text {
+            max-width: 160px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        &-subtitle {
+            font-size: 18px;
+            margin-bottom: 10px;
+            @include bold;
+        }
+    }
+}
