@@ -1,0 +1,16 @@
+.factory {
+    padding: 100px 0;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+    &__text {
+        flex-basis: 50%;
+        margin-left: 70px;
+        font-size: 20px;
+    }
+    &__image {
+        margin: 20px 0;
+    }
+}

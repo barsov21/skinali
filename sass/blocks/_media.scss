@@ -40,6 +40,12 @@
             margin-top: 80px;
         }
     }
+    .factory {
+        padding: 80px 0;
+        &__wrapper {
+            margin-top: 80px;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -53,6 +59,13 @@
         &-hero {
             background-size: 100%;
             background-position: top right;
+        }
+    }
+    .offer {
+        &__block {
+            background: none;
+            background-color: #fff;
+            padding: 40px;
         }
     }
     .features {
@@ -105,6 +118,12 @@
             font-size: 28px;
         }
     }
+    .factory {
+        padding: 70px 0;
+        &__wrapper {
+            margin-top: 70px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -113,10 +132,8 @@
         padding: 0 20px;
     }
     .offer {
-        &__block {
-            background: none;
-            background-color: #fff;
-            padding: 40px;
+        &_price {
+            padding: 60px 0;
         }
         &__title {
             font-size: 13px;
@@ -139,6 +156,10 @@
         &__input {
             margin-bottom: 20px;
         }
+        &__policy {
+           margin-left: 0;
+           margin-top: 30px; 
+        }
     }
     .features {
         &__item {
@@ -158,7 +179,6 @@
             justify-content: center;
             margin-top: 60px;
         }
-
         &__title {
             font-size: 24px;
         }
@@ -204,6 +224,25 @@
             width: 100%;
         }
     }
+    .factory {
+        padding: 60px 0;
+        &__wrapper {
+            margin-top: 60px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+    }
+    .contacts {
+        padding: 60px 0;
+        &__wrapper {
+            margin-top: 60px;
+        }
+        &__item {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -225,6 +264,7 @@
     }
     .button_form {
         padding: 0;
+        font-size: 12px;
     }
     .features {
         padding: 60px 0;
@@ -242,6 +282,9 @@
         &__checkbox {
             margin-bottom: 20px;
         }
+        &__policy {
+            font-size: 14px;
+        }
     }
     .price {
         &__card {
@@ -252,6 +295,11 @@
         }
         &__title {
             font-size: 22px;
+        }
+    }
+    .factory {
+        &__text {
+            font-size: 16px;
         }
     }
 }
