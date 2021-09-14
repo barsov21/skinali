@@ -228,6 +228,7 @@
         padding: 60px 0;
         &__wrapper {
             margin-top: 60px;
+            justify-content: center;
         }
         &__title {
             font-size: 24px;
@@ -241,6 +242,15 @@
         &__item {
             width: 100%;
             margin-bottom: 30px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+    }
+    .questions {
+        padding: 60px 0;
+        &__wrapper {
+            margin-top: 60px;
         }
     }
 }
@@ -300,6 +310,11 @@
     .factory {
         &__text {
             font-size: 16px;
+        }
+    }
+    .questions {
+        &__block {
+            flex-direction: column;
         }
     }
 }
