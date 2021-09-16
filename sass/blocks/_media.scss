@@ -380,7 +380,9 @@
     }
     .factory {
         &__text {
+            flex-basis: 100%;
             font-size: 16px;
+            margin-left: 0;
         }
     }
     .questions {
