@@ -1,0 +1,49 @@
+.footer {
+    padding: 40px 0;
+    background-color: #262626;
+    color: #fff;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    &__title {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+        @include bold;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+    &__subtitle {
+        color: #fff;
+        display: block;
+        margin-bottom: 48px;
+    }
+    &__copy {
+        color: #767676;
+    }
+    &__pay-logo {
+        margin: 15px;
+    }
+    &__contacts {
+        text-align: right;
+    }
+    &__phone {
+        display: block;
+        margin-bottom: 19px;
+        font-size: 20px;
+        @include bold;
+    }
+    &__mail {
+        display: block;
+        margin-bottom: 23px;
+    }
+    &__social-link {
+        margin-left: 10px;
+    }
+}

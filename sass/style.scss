@@ -2,6 +2,10 @@
 @import 'libs/font';
 // Подключение файла normalize.scss
 @import 'libs/normalize';
+// twentyTwenty 
+@import 'libs/twentytwenty';
+// slick 
+@import 'libs/slick';
 
 // Базовые настройки сетки
 @import 'base/grid';
@@ -38,6 +42,8 @@ img {
 @import 'blocks/price';
 // Блок step
 @import 'blocks/step';
+// before slider
+@import 'blocks/before';
 // Блок reviews
 @import 'blocks/reviews';
 // Блок factory 
@@ -46,6 +52,8 @@ img {
 @import 'blocks/contacts';
 // Блок questions
 @import 'blocks/questions';
+// Блок footer 
+@import 'blocks/footer';
 // Файл media.scss
 @import 'blocks/media';
 

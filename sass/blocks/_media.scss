@@ -29,7 +29,7 @@
         }
     }
     .price {
-        padding: 80px 0;
+        padding-bottom: 80px;
         &__wrapper {
             margin-top: 80px;
         }
@@ -40,8 +40,21 @@
             margin-top: 80px;
         }
     }
+    .reviews {
+        &__wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__item {
+            margin-bottom: 60px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
     .factory {
-        padding: 80px 0;
+        padding-bottom: 80px;
         &__wrapper {
             margin-top: 80px;
         }
@@ -91,7 +104,7 @@
         }
     }
     .price {
-        padding: 70px 0;
+        padding-bottom: 70px;
         &__title {
             font-size: 28px;
         }
@@ -118,8 +131,22 @@
             font-size: 28px;
         }
     }
-    .factory {
+    .before {
         padding: 70px 0;
+        &__wrapper {
+            margin-top: 70px;
+        }
+        &__title {
+            font-size: 28px;
+        }
+    }
+    .reviews {
+        &__title {
+            font-size: 28px;
+        }
+    }
+    .factory {
+        padding-bottom: 70px;
         &__wrapper {
             margin-top: 70px;
         }
@@ -133,6 +160,7 @@
     }
     .offer {
         &_price {
+            margin-top: 105px;
             padding: 60px 0;
         }
         &__title {
@@ -204,7 +232,7 @@
         }
     }
     .price {
-        padding: 60px 0;
+        padding-bottom: 60px;
         &__wrapper {
             margin-top: 60px;
         }
@@ -224,8 +252,26 @@
             width: 100%;
         }
     }
-    .factory {
+    .before {
         padding: 60px 0;
+        &__wrapper {
+            margin-top: 60px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+    }
+    .reviews {
+        padding: 60px 0;
+        &__wrapper {
+            margin-top: 60px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+    }
+    .factory {
+        padding-bottom: 60px;
         &__wrapper {
             margin-top: 60px;
             justify-content: center;
@@ -251,6 +297,20 @@
         padding: 60px 0;
         &__wrapper {
             margin-top: 60px;
+        }
+    }
+    .footer {
+        &__block {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &__pay-logo {
+            margin: 5px;
+        }
+        &__contacts {
+            margin-top: 30px;
+            text-align: center;
         }
     }
 }
@@ -280,9 +340,7 @@
         padding: 60px 0;
     }
     .title {
-        &_features {
-            font-size: 24px;
-        }
+        font-size: 19px;
     }
     .form {
         &__row-check {
@@ -305,6 +363,11 @@
         }
         &__title {
             font-size: 22px;
+        }
+    }
+    .reviews {
+        &__item-text {
+            font-size: 12px;
         }
     }
     .factory {

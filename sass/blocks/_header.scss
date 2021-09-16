@@ -24,6 +24,12 @@
             height: 80px;
             width: 70px;
             cursor: pointer;
+            &:hover {
+                cursor: pointer;
+            }
+            &:focus {
+                outline: none;
+            }
         }
         &__line {
             width: 20px;

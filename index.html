@@ -16,7 +16,7 @@
                     <a href="#" class="header__navigation-link">Главная</a>
                 </li>
                 <li class="header__navigation-item">
-                    <a href="#" class="header__navigation-link">Продукция</a>
+                    <a href="#features" class="header__navigation-link">Преимущества</a>
                 </li>
                 <li class="header__navigation-item">
                     <a href="#" class="header__navigation-link">Каталог</a>
@@ -57,7 +57,7 @@
                         <a href="mailto:info@mail.ru" class="header__info">info@mail.ru</a>
                     </div>
 
-                    <button class="button button_o">Получить консультацию</button>
+                    <a href="#offer" class="button button_o">Получить консультацию</a>
                 </div>
             </div>
         </div>
@@ -69,12 +69,12 @@
                     на скинали
                 </h2>
                 <div class="header-hero__subtitle">от 3000 р/м<sup>2</sup></div>
-                <button class="button">Заказать скинали</button>
+                <a href="#offer" class="button">Заказать скинали</a>
             </div>
         </div>
     </header>
 
-    <div class="offer">
+    <div class="offer" id="offer">
         <div class="container">
             <div class="offer__block offer__block_calc-bg">
                 <h2 class="offer__title">ОСТАВЬТЕ ЗАЯВКУ НА РАСЧЕТ</h2>
@@ -85,15 +85,24 @@
                     <div class="form__row">
                         <div class="form__group">
                             <label class="form__label" for="">Вид стекла</label>
-                            <input class="form__input" type="text">
+                            <input type="hidden" name="type" id="select-type" value="С печатью">
+                            <div class="select form__select">
+                                <div class="select_checked">
+                                    С печатью
+                                </div>
+                                <ul class="select__dropdown">
+                                    <li class="select__option" data-value="С печатью">С печатью</li>
+                                    <li class="select__option" data-value="Без печати">Без печати</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="form__group">
                             <label class="form__label" for="">Ширина, см</label>
-                            <input class="form__input" type="text">
+                            <input class="form__input" type="number">
                         </div>
                         <div class="form__group">
                             <label class="form__label" for="">Высота, см</label>
-                            <input class="form__input" type="text">
+                            <input class="form__input" type="number">
                         </div>
                     </div>
                     <div class="form__row form__row-check">
@@ -126,7 +135,7 @@
         </div>
     </div>
 
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">
             <h2 class="title title_features">Наши преимущества</h2>
             <div class="features__wrapper">
@@ -493,7 +502,33 @@
         </div>
     </section>
 
-    <!-- <section class="reviews">
+    <section class="before">
+        <div class="container">
+            <h2 class="title before__title">До и после</h2>
+            <div class="before__slider">
+                <div class="before__slider-item">
+                    <div class="before__after">
+                        <img src="img/before-slider/slinali-44.jpg" alt="skinali-44">
+                        <img src="img/before-slider/skinali-45.jpg" alt="skinali-45">
+                    </div>
+                </div>
+                <div class="before__slider-item">
+                    <div class="before__after">
+                        <img src="img/before-slider/slinali-44.jpg" alt="skinali-44">
+                        <img src="img/before-slider/skinali-45.jpg" alt="skinali-45">
+                    </div>
+                </div>
+                <div class="before__slider-item">
+                    <div class="before__after">
+                        <img src="img/before-slider/slinali-44.jpg" alt="skinali-44">
+                        <img src="img/before-slider/skinali-45.jpg" alt="skinali-45">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
         <div class="container">
             <h2 class="title reviews__title">Отзывы наших клиентов</h2>
             <div class="reviews__wrapper">
@@ -525,7 +560,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <div class="offer offer_price">
         <div class="container">
@@ -541,7 +576,7 @@
                             <input class="form__input" type="text"  placeholder="Ваше имя">
                         </div>
                         <div class="form__group">   
-                            <input class="form__input" type="text"  placeholder="Ваш телефон">
+                            <input class="form__input" type="tel"  placeholder="Ваш телефон">
                         </div>
                         <div class="form__group">   
                             <input class="form__input" type="text"  placeholder="Ваша цена">
@@ -622,8 +657,47 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer__description">
+                    <h4 class="footer__title">Фабрика скинали №1</h4>
+                    <span class="footer__subtitle">ведущий производитель скинали</span>
+                    <span class="footer__copy">© Фабрика скинали №1</span>
+                </div>
+                <div class="footer__pay-info">
+                    <img src="img/footer/webmoney-pay-logo.png" alt="" class="footer__pay-logo">
+                    <img src="img/footer/yandex-pay-logo.png" alt="" class="footer__pay-logo">
+                    <img src="img/footer/visa-pay-logo.png" alt="" class="footer__pay-logo">
+                    <img src="img/footer/master-card-logo.png" alt="" class="footer__pay-logo">
+                </div>
+                <div class="footer__contacts">
+                    <a href="#" class="footer__phone">+7 499 123-45-67</a>
+                    <a href="#" class="footer__mail">5404177@mail.ru</a>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <img class="img-fluid" src="img/footer/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <img class="img-fluid" src="img/footer/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <img class="img-fluid" src="img/footer/vk.png" alt="Vk">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- Подключение виджета обратной связи через соцсети -->
     <script type="text/javascript" src="https://spikmi.com/Widget?Id=6592"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
