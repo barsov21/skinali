@@ -159,6 +159,11 @@
         padding: 0 20px;
     }
     .offer {
+        margin-top: 300px;
+        padding: 0;
+        &__block {
+            padding: 20px;
+        }
         &_price {
             margin-top: 105px;
             padding: 60px 0;
@@ -188,6 +193,9 @@
            margin-left: 0;
            margin-top: 30px; 
         }
+    }
+    .select {
+        margin-bottom: 20px;
     }
     .features {
         &__item {
